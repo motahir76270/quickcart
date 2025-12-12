@@ -5,8 +5,6 @@ import { dbConnect } from "./db";
 // Create a client to send and receive events
 export const inngest = new Inngest({ id: "my-app" });
 
-
-
 export const syncUserCreation = inngest.createFunction(
     {
         id: "sync-user-from-clerk",
